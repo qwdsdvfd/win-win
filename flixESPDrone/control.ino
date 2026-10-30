@@ -265,8 +265,8 @@ void controlTorque() {
 	motors[MOTOR_REAR_LEFT]   += manualRearOff;
 	motors[MOTOR_REAR_RIGHT]  += manualRearOff;
 
-	motors[0] = constrain(motors[0], 0, 1);
-	motors[1] = constrain(motors[1], 0, 1);
-	motors[2] = constrain(motors[2], 0, 1);
-	motors[3] = constrain(motors[3], 0, 1);
+	motors[0] = constrain(motors[0], 0, 0.2);
+	motors[1] = constrain(motors[1], 0, 0.2);
+	motors[2] = constrain(motors[2], 0, 0.2);ф
+	motors[3] = constrain(motors[3], 0, 0.2);
 }
